@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinterval and settime out</title>
+    <style>
+        #samay {
+
+            /* overflow: auto; */
+            margin-left: auto;
+            margin-right: auto;
+            padding: 32px;
+            margin-top: 1%;
+            border: 12px solid rgb(0, 0, 0);
+            height: 77px;
+            width: 34%;
+            justify-content: center;
+            text-align: center;
+            font-size: 29px;
+            border-radius: 432px;
+            background-color: rgb(255, 0, 225);
+
+        }
+
+        /* .scrollbar-colored {
+            scrollbar-color: red green;
+
+            height: 150px;
+            width: 200px;
+            overflow-y: scroll;
+            background-color: lightgreen;
+            animation: move 3s ease-in-out 3s 4 reverse alternate;
+        } */
+       
+
+        h1 {
+            border: 3px solid yellow;
+            margin: 10% 30%;
+            padding: 20px;
+            text-align: center;
+            height: auto;
+            width: 33%;
+            justify-content: center;
+            border-radius: 433px;
+            background-color: yellow;
+        }
+
+        /* body {
+            background-color: blue;
+        } */
+        @media (min-width:600px) {
+            #samay{
+                display: block;
+                background-color: rgb(255, 30, 49);
+                width: 80%;
+                border: 4px solid burlywood;
+                font-size: 29px;
+            }
+            body{
+                background-color: rgb(4, 0, 255);
+                
+            }
+        }
+        @media (min-width:370px) and (max-width:600px){
+            #samay{
+                /* display: block; */
+                background-color: rgb(197, 124, 130);
+                width: 50%;
+                border: 4px solid rgb(11, 6, 0);
+                font-size: 20px;
+            }
+            h1{
+                
+                padding-top: 2px;
+                text-align: center;
+                font-size: 32px;
+                border-radius: 8px;
+                height: 50%;
+                /* width: 70%; */
+                padding: 1rem;
+                margin: 20%;
+                width: auto;
+            }
+            body{
+                background-color: rgb(121, 19, 255);
+                
+            }
+        }
+        @media (min-width:270px) and (max-width:370px){
+            #samay{
+                padding: -3px;
+                height: 82px;
+                border-radius: 30px;
+                display: block;
+                background-color: rgb(0, 255, 64);
+                width: 39%;
+                border: 4px solid rgb(0, 17, 255);
+                font-size: 16px;
+            }
+            h1{
+                padding-top: 2px;
+                text-align: center;
+                font-size: 22px;
+                border-radius: 5px;
+                margin: auto;
+                height: 50px;
+                /* width: 70%; */
+                padding: 2px;
+                margin: 20%;
+                width: auto;
+            }
+            body{
+                background-color: rgb(255, 251, 0);
+                
+            }
+        }
+        @media (min-width:100px) and (max-width:270px){
+            #samay{
+                
+                padding: 12px;
+                display: block;
+                border-radius: 2px;
+                background-color: rgb(98, 255, 0);
+                width: 59%;
+                height: 2%;
+                border: 4px solid rgb(255, 255, 255);
+                font-size: 13px;
+            }
+            h1{
+                padding-top: 2px;
+                text-align: center;
+                font-size: 12px;
+                border-radius: 3px;
+                margin: auto;
+                height: 40px;
+                /* width: 70%; */
+                padding: 2px;
+                margin: 20%;
+                width: auto;
+            }
+            body{
+                background-color: rgb(255, 0, 0);
+                
+            }
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div id="box" class="division">
+        <h1>
+            IT'S YOUR TIME
+
+        </h1>
+        <div id="samay">
+        </div>
+
+    </div>
+</body>
+<script>
+    // function miss(name){
+    //     console.log(`i mess you ${name}`)
+    // }
+    // setTimeout(miss, 5000 , "boss");
+    // Timeout=setTimeout(miss, 5000 , "boss");
+    // console.log(Timeout)
+    // clearTimeout(Timeout)
+
+    // time=setInterval(miss, 1000 ,"krisna");
+    // clearTimeout(time)
+
+
+    //time and date **************
+    function displaytime() {
+        samay = new Date();
+        // console.log(samay);
+        document.getElementById("samay").innerHTML = samay
+    }
+    setInterval(displaytime, 1000);
+
+</script>
+
+</html>
